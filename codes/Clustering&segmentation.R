@@ -66,6 +66,7 @@ churn_processed[num_features] <- scale(churn_processed[num_features])
 
 colnames(churn_processed)
 
+
 # Visualize outliers after scaling
 boxplot(churn_processed[num_features], 
         main = "Outlier Detection After scaling", col = c("blue", "red", "green"))
@@ -151,6 +152,7 @@ fviz_nbclust(pca_data, kmeans, method = "wss")  # Elbow Method gave 3
 optimal_k <- 3
 pam_model <- pam(pca_data, k = optimal_k)
 pca_data$cluster <- as.factor(pam_model$clustering)
+saveRDS(pam_model, "pam_model.rds")
 
 #clus_end <- Sys.time()
 #print(paste("Clustering Execution Time:", round(clus_end - clus_start, 2), "seconds"))
