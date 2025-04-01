@@ -1,35 +1,24 @@
----
-output: github_document
----
+## How to Launch the Project
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
+1. **Clone this repo**:
+   ```bash
+   git clone https://github.com/Premee12/R-Project.git
 
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>"
-)
-```
 
-# codes
+### 2. Set up the Database
+- Create a new database in MySQL  
+- Import the telecom customer dataset into a table (`telecom_customers`)  
+- Make sure R can access this using the `RMySQL` package
 
-<!-- badges: start -->
-<!-- badges: end -->
+### 3. Run Scripts in Order (Using RStudio)
+> To ensure all necessary model files are created for the app to work properly.
 
-The goal of codes is to ...
+- `clustering_model.R`
+  - `Pam_models.rds` 
+- `classification_model.R` 
+  - `xgb_churn_model.rds`
+  - `pca_model.rds`
+  - `pca_component_count.rds`
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
-
-```{r cars}
-summary(cars)
-```
-
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub.
+### 4. Run the app.R file to launch the Shiny App 
+  - A browser window will open with an interface
