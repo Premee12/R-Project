@@ -1,4 +1,4 @@
-# Customer Behavior Analysis and Segmentation Using SQL and R
+# R Programming for Data Mining, Behavior Analysis, Clustering, and Model Prediction.
 
 This project analyzes **customer churn behavior** and builds models to predict churn while segmenting customers for targeted business strategies. It combines **SQL for data exploration**, **R for clustering and classification**, and **Shiny for deployment via an interactive interface**.
 
@@ -64,8 +64,29 @@ Customer churn directly impacts telecom profitability. This project was designed
 
 ---
 
-## 🚀 How to Launch the Project
+## How to Launch the Project
 
 1. **Clone this repo**:
    ```bash
    git clone https://github.com/Premee12/R-Project.git
+
+
+### 2. Set up the Database
+- Create a new database in MySQL  
+- Import the telecom customer dataset into a table (`telecom_customers`)  
+- Make sure R can access this using the `RMySQL` package
+
+### 3. Run Scripts in Order (Using RStudio)
+> To ensure all necessary model files are created for the app to work properly.
+
+- `clustering_model.R`
+  - `Pam_models.rds` 
+- `classification_model.R` 
+  - `xgb_churn_model.rds`
+  - `pca_model.rds`
+  - `pca_component_count.rds`
+
+### 4. Run the app.R file to launch the Shiny App 
+  - A browser window will open with an interactive interface where you can:
+  - Enter customer attributes
+  - Predict whether the customer is **likely to churn
