@@ -11,7 +11,7 @@
 - Make sure R can access this using the `RMySQL` package
 
 ### 3. Run Scripts in Order (Using RStudio)
-> To ensure all necessary model files are created for the app to work properly.
+To ensure that all necessary model files are created for the app to work properly.
 
 - `clustering_model.R`
   - `Pam_models.rds` 
