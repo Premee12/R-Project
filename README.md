@@ -1,66 +1,71 @@
-# Customer Behavior Analysis and Segmentation Using SQL and R 
+# Customer Behavior Analysis and Segmentation Using SQL and R
 
-This project analyzes **customer behavior** to uncover why customers churn and how they can be segmented for targeted business strategies. It combines **SQL for data exploration**, **R for clustering and classification**, and **GitHub for collaboration and deployment**.
-
----
-
-## Problem Statement
-
-Understanding why customers churn is critical for any business. This project uses data mining techniques to:
-- Analyze customer churn patterns and behavior
-- Segment customers into meaningful groups
-- Derive actionable insights for business retention strategies
+This project analyzes **customer churn behavior** and builds models to predict churn while segmenting customers for targeted business strategies. It combines **SQL for data exploration**, **R for clustering and classification**, and **Shiny for deployment via an interactive interface**.
 
 ---
 
-## 🗂 Dataset
+##  Problem Statement
 
-- **Source**: Customer behavior dataset from the telecom domain  
-- **Rows**: ~7,000 customers  
-- **Features**: Demographics, contract details, service usage, churn info  
-- **Storage**: Managed in a **MySQL database**, queried via **RMySQL**
+Customer churn directly impacts telecom profitability. This project was designed to:
+- Understand churn behavior
+- Segment customers using clustering
+- Predict churn using supervised learning models
+- Provide actionable insights to aid business retention efforts
 
 ---
 
-## Tools and Technologies
+## Dataset
 
-| Tool              | Purpose                             |
-|-------------------|-------------------------------------|
-| **R**             | Data analysis, clustering, modeling |
-| **MySQL**         | Structured data querying            |
-| **RMySQL**        | R-MySQL database integration        |
-| **ggplot2**       | Visualization  
-| **K-Medoids**     | Clustering
-| **LightGBM**       | Classification modeling             |
-| **GitHub**        | Collaboration and version control   |
+- **Source**: Kaggle Telco Customer Churn dataset  
+- **Rows**: ~7,000+ customers  
+- **Features**: Demographics, service usage, contract details, churn info  
+- **Storage**: Stored in a **MySQL** database and queried via **RMySQL**
+
+---
+
+##  Tools and Technologies
+
+| Tool/Tech          | Purpose                                  |
+|--------------------|------------------------------------------|
+| **R**              | Data analysis, modeling, deployment      |
+| **MySQL**          | Structured data storage and querying     |
+| **RMySQL**         | R-MySQL database integration             |
+| **ggplot2**        | Visualization                            |
+| **PAM (K-Medoids)**| Customer segmentation (Clustering)       |
+| **Random Forest**  | Classification model                     |
+| **XGBoost**        | Advanced churn prediction model          |
+| **Shiny**          | Web app deployment and user interface    |
+| **GitHub**         | Version control and collaboration        |
 
 ---
 
 ## What Was Done
 
-- Connected R to a MySQL database using `RMySQL`
-- Performed SQL-based exploratory analysis on customer churn
-- Cleaned and prepared data in R
-- Built a **Esemble Model** model for churn classification **LightGBM**
-- Applied **K-Medoids clustering** for customer segmentation
-- Validated clustering using **Purity**, **Jaccard Index**, and **Entropy**
+- Performed SQL-based **EDA** on customer churn via `RMySQL`
+- Conducted full **data cleaning**, transformation, and feature engineering in R
+- Applied **PCA** for dimensionality reduction
+- Segmented customers using **K-Medoids (PAM) clustering**
+- Built classification models using:
+  - ✅ **Random Forest**
+  - ✅ **XGBoost** (Best performance with 97.23% accuracy)
+- Evaluated models using precision, recall, F1-score, ROC Curve
+- Deployed a **Shiny web application** to predict churn from new customer data
 
 ---
 
-## Key Insights
+## 🔍 Key Insights
 
-- **Top churn drivers** include:
-  - **Month-to-month contracts**
-  - **Influence of competitors**
-  - Lack of technical support and online security features
-- Segmented customers into clusters for targeted marketing and retention strategies
+- Customers with **month-to-month contracts**, low tenure, and limited add-ons are more likely to churn
+- Competitor influence and lack of technical support are major churn drivers
+- Clustering revealed three key customer segments:  
+  1. High-risk churners  
+  2. Loyal high-value customers  
+  3. Cost-sensitive but stable users
 
 ---
 
-##  How to Run
+## 🚀 How to Launch the Project
 
-1. Clone the repo:
+1. **Clone this repo**:
    ```bash
-   https://github.com/Premee12/R-Project.git
-
-
+   git clone https://github.com/Premee12/R-Project.git
