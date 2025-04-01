@@ -53,7 +53,7 @@ Customer churn directly impacts telecom profitability. This project was designed
 
 ---
 
-## 🔍 Key Insights
+## Key Insights
 
 - Customers with **month-to-month contracts**, low tenure, and limited add-ons are more likely to churn
 - Competitor influence and lack of technical support are major churn drivers
