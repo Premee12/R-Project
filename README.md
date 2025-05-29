@@ -46,8 +46,8 @@ Customer churn directly impacts telecom profitability. This project was designed
 - Applied **PCA** for dimensionality reduction
 - Segmented customers using **K-Medoids (PAM) clustering**
 - Built classification models using:
-  - ✅ **Random Forest**
-  - ✅ **XGBoost** (Best performance with 97.23% accuracy)
+  - **Random Forest**
+  - **XGBoost** (Best performance with 97.23% accuracy)
 - Evaluated models using precision, recall, F1-score, ROC Curve
 - Deployed a **Shiny web application** to predict churn from new customer data
 
