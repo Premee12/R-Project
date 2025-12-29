@@ -89,4 +89,4 @@ Customer churn directly impacts telecom profitability. This project was designed
 ### 4. Run the app.R file to launch the Shiny App 
   - A browser window will open with an interactive interface where you can:
   - Enter customer attributes
-  - Predict whether the customer is **likely to churn
+  - Predict whether the customer is likely to churn
